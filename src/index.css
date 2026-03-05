@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 231 15% 18%; /* #282a36 */
+    --foreground: 60 30% 96%;  /* #f8f8f2 */
+
+    --card: 231 15% 18%;
+    --card-foreground: 60 30% 96%;
+
+    --popover: 231 15% 18%;
+    --popover-foreground: 60 30% 96%;
+
+    --primary: 265 89% 78%; /* #bd93f9 */
+    --primary-foreground: 231 15% 18%;
+
+    --secondary: 225 27% 51%; /* #6272a4 */
+    --secondary-foreground: 60 30% 96%;
+
+    --muted: 225 27% 51%;
+    --muted-foreground: 225 27% 51%;
+
+    --accent: 31 100% 71%; /* #ffb86c */
+    --accent-foreground: 231 15% 18%;
+
+    --destructive: 0 100% 67%; /* #ff5555 */
+    --destructive-foreground: 60 30% 96%;
+
+    --border: 231 14% 31%; /* #44475a */
+    --input: 231 14% 31%;
+    --ring: 265 89% 78%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Custom Notion-like minimalistic touches */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
